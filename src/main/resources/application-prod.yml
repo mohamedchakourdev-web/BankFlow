@@ -1,0 +1,14 @@
+# Activate with SPRING_PROFILES_ACTIVE=prod.
+# This profile adds no credentials. JWT_SECRET, database settings, and Kafka
+# bootstrap servers still come from the environment.
+springdoc:
+  api-docs:
+    enabled: false
+  swagger-ui:
+    enabled: false
+
+management:
+  endpoint:
+    health:
+      show-details: never
+      show-components: never
